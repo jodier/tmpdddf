@@ -1,0 +1,43 @@
+{% extends "HypnosMainBundle:Default:layout.htm.twig" %}
+
+{% block title %}{{ parent() }}{% endblock %}
+
+{% block menu %}
+          <li>
+            <a href="">Products</a>
+            <ul class="sub_menu">
+              <li><a href="{{ asset('hypnos') }}">HypnOS</a></li>
+              <li class="seperator"></li>
+              <li><a href="{{ asset('wombat') }}">...</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="{{ asset('services') }}">Services</a>
+          </li>
+          <li>
+            <a href="{{ asset('news') }}">News</a>
+          </li>
+          <li>
+            <a href="{{ asset('support') }}">Support</a>
+          </li>
+          <li>
+            <a href="{{ asset('store') }}">Store</a>
+          </li>
+          <li>
+            <a href="">Company</a>
+            <ul class="sub_menu">
+              <li><a href="{{ asset('hypnos') }}">Hypnos3D</a></li>
+              <li><a href="{{ asset('contacts') }}">Contacts</a></li>
+            </ul>
+          </li>
+{% endblock %}
+
+{% block content %}
+<!--
+  <ul class="menu2">
+    <li><a href="">Item1</a></li>
+    <li><a href="">Item2</a></li>
+  </ul>
+  -->
+{% endblock %}
+

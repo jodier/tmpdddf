@@ -1,0 +1,3 @@
+HypnosMainBundle_index:
+    pattern: /{page}
+    defaults: { _controller: HypnosMainBundle:Default:index }

@@ -1,12 +1,12 @@
-hypnos_support:
-    resource: "@HypnosSupportBundle/Resources/config/routing.yml"
-    prefix:   /
+index:
+    pattern: /
+    defaults: { _controller: HypnosMainBundle:Default:index,page:home }
 
-hypnos_main:
+HypnosMainBundle:
     resource: "@HypnosMainBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix: /
 
-# Internal routing configuration to handle ESI
-#_internal:
-#    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
-#    prefix:   /_internal
+HypnosSupportBundle:
+    resource: "@HypnosSupportBundle/Resources/config/routing.yml"
+    prefix: /
+

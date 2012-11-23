@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+    <title>{% block title %}Hypnos Solutions{% endblock %}</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <style type="text/css" media="screen">
+      @import "{{ asset('bundles/hypnossupport/css/base.css') }}";
+      @import "{{ asset('bundles/hypnossupport/css/menu.css') }}";
+      @import "{{ asset('bundles/hypnossupport/css/menu2.css') }}";
+    </style>
+
+    <script type="text/javascript" src="{{ asset('js/swfobject.js') }}"></script>
+
+  </head>
+  <body>
+
+    <div id="bar1_div">
+
+      <div class="bar1_1_div">
+        <a href="{{ asset('support') }}"><img src="{{ asset('bundles/hypnossupport/img/logo.png') }}" width="424" height="60" alt="Hypnos3D" style="margin-left: 8px;" /></a>
+      </div>
+
+      <table class="bar1_2_div">
+        <tr>
+          <td><input type="text" name="A" /></td>
+          <td style="width: 11px;"></td>
+          <td><input type="image" src="{{ asset('bundles/hypnosmain/img/search.png') }}" name="B" /></td>
+          <td style="width: 09px;"></td>
+        </tr>
+      </table>
+
+    </div>
+
+    <div id="bar2_div">
+
+      <div class="bar2_1_div">
+
+        <ul class="menu">
+{% block menu %}{% endblock %}
+        </ul>
+
+      </div>
+
+      <div class="bar2_2_div">
+        &nbsp;
+        <a href=""><img src="{{ asset('bundles/hypnossupport/img/FaceBook_gray.png') }}" width="35" height="35" alt="FaceBook"
+		onmouseout="javascript:this.src='{{ asset('bundles/hypnossupport/img/FaceBook_gray.png') }}'"
+		onmouseover="javascript:this.src='{{ asset('bundles/hypnossupport/img/FaceBook_color.png') }}'" /></a>
+        &nbsp;
+        <a href=""><img src="{{ asset('bundles/hypnossupport/img/Twitter_gray.png') }}" width="35" height="35" alt="Twitter"
+		onmouseout="javascript:this.src='{{ asset('bundles/hypnossupport/img/Twitter_gray.png') }}'"
+		onmouseover="javascript:this.src='{{ asset('bundles/hypnossupport/img/Twitter_color.png') }}'" /></a>
+        &nbsp;
+        <a href=""><img src="{{ asset('bundles/hypnossupport/img/Feed_gray.png') }}" width="35" height="35" alt="Feed"
+		onmouseout="javascript:this.src='{{ asset('bundles/hypnossupport/img/Feed_gray.png') }}'"
+		onmouseover="javascript:this.src='{{ asset('bundles/hypnossupport/img/Feed_color.png') }}'" /></a>
+        &nbsp;
+        <a href=""><img src="{{ asset('bundles/hypnossupport/img/Youtube_gray.png') }}" width="35" height="35" alt="Youtube"
+		onmouseout="javascript:this.src='{{ asset('bundles/hypnossupport/img/Youtube_gray.png') }}'"
+		onmouseover="javascript:this.src='{{ asset('bundles/hypnossupport/img/Youtube_color.png') }}'" /></a>
+        &nbsp;
+      </div>
+
+      <div style="float: left; margin-left: 10px; line-height: 35px;"><a href="{{ asset('/') }}">home</a>{% for pathItem in pathItemArray %} &raquo; <a href="{% for pathItem2 in pathItemArray %}/{{ pathItem2 }}{% endfor %}">{{ pathItem }}</a>{% endfor %}</div>
+
+    </div>
+
+    <div id="bar3_div">
+
+      <div id="bar3_1_div">
+{% block content %}{% endblock %}
+      </div>
+
+    </div>
+
+    <div id="bar4_div">
+      <div style="padding: 6px; font-size: 12px; text-align: center;">&copy; Copyright 2012 Hypnos3D. All Rights Reserved.</div>
+    </div>
+
+  </body>
+</html>
+

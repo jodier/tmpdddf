@@ -1,0 +1,7 @@
+parameters:
+#    hypnos_support.example.class: Hypnos\SupportBundle\Example
+
+services:
+#    hypnos_support.example:
+#        class: %hypnos_support.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

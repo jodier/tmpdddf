@@ -1,0 +1,3 @@
+HypnosSupportBundle_index:
+    pattern: /support/{page}
+    defaults: { _controller: HypnosSupportBundle:Default:index }

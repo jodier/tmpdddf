@@ -1,0 +1,48 @@
+/*-------------------------------------------------------------------------*/
+/* MENU2								   */
+/*-------------------------------------------------------------------------*/
+
+.menu2
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: 0px;
+
+	list-style-type: none;
+
+}
+
+/*-------------------------------------------------------------------------*/
+
+.menu2 li
+{
+	width: 210px;
+
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	border: 0px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+.menu2 li a
+{
+	display: block;
+
+	margin: 0px 0px 0px 0px;
+	padding: 4px 4px 4px 4px;
+	border: 0px;
+
+	text-decoration: none;
+
+	line-height: 23px;
+}
+
+/*-------------------------------------------------------------------------*/
+
+.menu2 li a:link, .menu2 li a:visited { background: #FBFBFB url('/bundles/hypnossupport/img/menu1.png'); }
+.menu2 li a:hover { background: #EEEEEE url('/bundles/hypnossupport/img/menu2.png'); }
+.menu2 li a:active { background: #FBFBFB url('/bundles/hypnossupport/img/menu2.png'); }
+
+/*-------------------------------------------------------------------------*/
+

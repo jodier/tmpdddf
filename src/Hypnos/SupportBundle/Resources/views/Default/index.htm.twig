@@ -1,0 +1,18 @@
+{% extends "HypnosSupportBundle:Default:layout.htm.twig" %}
+
+{% block title %}{{ parent() }} - support - {{ page }}{% endblock %}
+
+{% block menu %}
+          <li>
+            <a href="{{ asset('support/hypnos') }}">HypnOS</a>
+          </li>
+{% endblock %}
+
+{% block content %}
+        <ul class="menu2">
+          <li><a href="{{ asset('support/doc/libctnr') }}">API LibCTNR</a></li>
+          <li><a href="{{ asset('support/doc/libkrnl') }}">API LibKRNL</a></li>
+          <li><a href="{{ asset('support/doc/libvfs') }}">API LibVFS</a></li>
+        </ul>
+{% endblock %}
+

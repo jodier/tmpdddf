@@ -1,9 +1,13 @@
+Options +FollowSymLinks
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    #<IfModule mod_vhost_alias.c>
-    #    RewriteBase /
-    #</IfModule>
+    RewriteRule ^public/(.*)$ public/$1 [L]
+    RewriteRule ^private/(.*)$ private/$1 [L]
+
+    RewriteRule ^doc/(.*)$ doc/$1 [L]
+    RewriteRule ^support/doc/(.*)$ doc/$1 [L]
 
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^(.*)$ app.php [QSA,L]
