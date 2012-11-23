@@ -1,3 +1,11 @@
+hypnos_support:
+    resource: "@HypnosSupportBundle/Resources/config/routing.yml"
+    prefix:   /
+
+hypnos_main:
+    resource: "@HypnosMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
 # Internal routing configuration to handle ESI
 #_internal:
 #    resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
