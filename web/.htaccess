@@ -5,6 +5,7 @@ Options +FollowSymLinks
 
     RewriteRule ^public/(.*)$ public/$1 [L]
     RewriteRule ^private/(.*)$ private/$1 [L]
+    RewriteRule ^download/(.*)$ download/$1 [L]
 
     RewriteRule ^doc/(.*)$ doc/$1 [L]
     RewriteRule ^support/doc/(.*)$ doc/$1 [L]
