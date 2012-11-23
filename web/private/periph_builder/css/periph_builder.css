@@ -1,0 +1,80 @@
+#list_div
+{
+	float: left;
+	width: 520px;
+	background-color: #DDDDDD;
+
+	margin: 0px 5px 0px 0px;
+
+	border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+}
+
+#editor_div
+{
+	float: left;
+	width: 620px;
+	background-color: #DDDDDD;
+
+	margin: 0px 0px 0px 5px;
+
+	border-radius: 0.7em;
+	-moz-border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+}
+
+.periph_builder_list
+{
+	width: 500px;
+
+	margin: 4px auto 4px auto;
+}
+
+.periph_builder_list_line_title
+{
+	background-color: #DDDDDD;
+}
+
+.periph_builder_list_line_odd
+{
+	background-color: #99CCFF;
+}
+
+.periph_builder_list_line_even
+{
+	background-color: #99FFFF;
+}
+
+.periph_builder_list_line_odd:hover
+{
+	background-color: #FFCCFF;
+}
+
+.periph_builder_list_line_even:hover
+{
+	background-color: #FFCCFF;
+}
+
+.periph_builder_list_line_title td
+{
+	font-size: 9pt;
+
+	font-weight: bold;
+
+	text-align: center;
+}
+
+.periph_builder_list tr td
+{
+	padding: 0px 2px 0px 2px;
+	border: inset 1px #DDDDDD;
+}
+
+.periph_builder_editor_form
+{
+	width: 600px;
+
+	margin: 10px auto 10px auto;
+}
+
